@@ -1,0 +1,26 @@
+{
+  "name": "reaction/symlink-faker",
+  "description": "Symlink faker for laravel local development",
+  "keywords": ["laravel", "symlink"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordan Ramstad",
+      "email": "jordan@reaction.ca"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+  },
+  "autoload": {
+    "psr-4": {
+      "Reaction\\SymlinkFaker\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
