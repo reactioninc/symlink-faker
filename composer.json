@@ -1,5 +1,5 @@
 {
-  "name": "reaction/symlink-faker",
+  "name": "reactioninc/symlink-faker",
   "description": "Symlink faker for laravel local development",
   "keywords": ["laravel", "symlink"],
   "license": "MIT",

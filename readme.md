@@ -7,7 +7,7 @@ Simple package created to help mitigate issues associated with symlinks during l
 ## Installation
 Required the package with composer
 ```
-composer require reaction/symlink-faker
+composer require reactioninc/symlink-faker
 ```
 
 Once the package is included, add the service provider to `config/app.php`

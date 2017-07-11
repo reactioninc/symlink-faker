@@ -12,7 +12,16 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     protected function shouldUse()
     {
-        return $this->app['config']->get('symlink-faker.enabled');
+        if ($this->app['config']->get('symlink-faker.enabled')) {
+            $environments = $this->app['config']->get('symlink-faker.environments');
+            if (count($environments)) {
+                return in_array(app()->environment(), $environments);
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     public function boot()
