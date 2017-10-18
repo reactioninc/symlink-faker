@@ -10,7 +10,7 @@ Required the package with composer
 composer require reactioninc/symlink-faker
 ```
 
-Once the package is included, add the service provider to `config/app.php`
+Once the package is included, add the service provider to `config/app.php` (laravel 5.5 this will not be needed)
 ```
 Reaction\SymlinkFaker\ServiceProvider::class
 ```
